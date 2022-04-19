@@ -1,0 +1,204 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : Education HTML Template </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner3.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <br><br><br><br>
+                    <h1 class="text-white">Our Courses</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="#">Home</a></li>
+                    <li>Our Courses</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+        <main class="main">
+            <section class="mt-50 mb-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <div style="text-align: center; margin-top: 40px">
+                                    <h4 style="color: #3f189a;">User and Course information</h4>
+                                </div>
+                                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Username' %}</label>
+                                        <input type="text" name="user" class="form-control" id="exampleInputName1"
+                                               placeholder="{{ user.user }}" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Fist Name' %}</label>
+                                        <input type="text" name="name" class="form-control" id="exampleInputName1"
+                                               placeholder="first name">
+                                    </div>
+
+                                     <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Phone' %}</label>
+                                        <input type="text" name="phone" class="form-control" id="exampleInputName1"
+                                               placeholder="phone number">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'E-Mail' %}</label>
+                                        <input type="email" name="email" class="form-control" id="exampleInputName1"
+                                               placeholder="email">
+                                    </div>
+
+                                     <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Country' %}</label>
+                                        <input type="text" name="country" class="form-control" id="exampleInputName1"
+                                               placeholder="Country">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'City' %}</label>
+                                        <input type="text" name="city" class="form-control" id="exampleInputName1"
+                                               placeholder="Your City">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Course' %}</label>
+                                        <input type="text" name="title" class="form-control" id="exampleInputName1"
+                                               placeholder="{{ course.title }}" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Price' %}</label>
+                                        <input type="text" name="price" class="form-control" id="exampleInputName1"
+                                               placeholder="{{ course.sell_price }}" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">{% trans 'Image' %}</label>
+                                        <input type="image" name="image" class="form-control" id="exampleInputName1"
+                                               placeholder="{{ course.image.url }}" disabled>
+                                    </div>
+
+                                    <center>
+                                    <button type="submit"
+                                            class="btn btn-primary mr-2">{% trans 'Continue Shopping' %}</button>
+                                    </center>
+                                    <br> <br> <br>
+                                </form>
+                            </div>
+
+                            <div class="divider center_icon mt-50 mb-50"><i class="fi-rs-fingerprint"></i></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Content END-->
+        <!-- Footer ==== -->
+        {% include 'footer.html' %}
+        <!-- Footer END ==== -->
+        <button class="back-to-top fa fa-chevron-up"></button>
+    </div>
+    <!-- External JavaScripts -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+    <script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+    <script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+    <script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+    <script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+    <script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+    <script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'assets/js/functions.js' %}"></script>
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+    <!-- Revolution JavaScripts Files -->
+    <script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+</body>
+
+</html>

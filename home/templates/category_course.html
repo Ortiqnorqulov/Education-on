@@ -1,0 +1,192 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : {% trans 'Category Course' %}</title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner3.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <br><br><br><br>
+                    <h1 class="text-white">{% trans 'Category Courses' %}</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="#">{% trans 'Home' %}</a></li>
+                    <li>{% trans 'Our Courses' %}</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+        <div class="content-block">
+            <!-- About Us -->
+            <div class="section-area section-sp1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+
+                            <div class="widget widget_archive">
+                                <h5 class="widget-title style-1" style="color: red">{% trans 'All Course Category' %}</h5>
+                                <ul>
+                                    {% for rs in category %}
+                                        <li class=""><a href="#">{{ rs.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <a href="{% url 'coursesall' %}"><img src="{% static 'assets/images/adv/adv.jpg' %}" alt=""/></a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-12">
+                            <div class="row">
+                                {% for rs in coursess %}
+                                    <div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+                                        <div class="cours-bx">
+                                            <div class="action-box">
+                                                <img src="{{ rs.image.url }}" alt="">
+                                                <a href="{% url 'course_detail' rs.id rs.slug %}" class="btn">{% trans 'Read More' %}</a>
+                                            </div>
+                                            <div class="info-bx text-center">
+                                                <h5><a href="#">{{ rs.title }}</a></h5>
+                                                <span>{% trans 'Programming' %}</span>
+                                            </div>
+                                            <div class="cours-more-info">
+                                                <div class="review">
+                                                    <span>3 Review</span>
+                                                    <ul class="cours-star">
+                                                        <li class="active"><i class="fa fa-star"></i></li>
+                                                        <li class="active"><i class="fa fa-star"></i></li>
+                                                        <li class="active"><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">
+                                                    <del>${{ rs.old_price }}</del>
+                                                    <h5>${{ rs.sell_price }}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+
+
+
+                                <div class="loadmore-post">
+                                    {% include 'paginator.html' with page=course %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact area END -->
+
+    </div>
+    <!-- Content END-->
+    <!-- Footer ==== -->
+    {% include 'footer.html' %}
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+<!-- Revolution JavaScripts Files -->
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+</body>
+
+</html>

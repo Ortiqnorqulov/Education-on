@@ -1,0 +1,508 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-22 03:13+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: home/templates/about-1.html:29 home/templates/about-1.html:72
+#: home/templates/about-1.html:80
+msgid "About Us"
+msgstr ""
+
+#: home/templates/about-1.html:79 home/templates/blog-details.html:76
+#: home/templates/blog.html:82 home/templates/category_course.html:81
+#: home/templates/contact-us.html:79 home/templates/courses-details.html:80
+#: home/templates/courses.html:81 home/templates/faq.html:80
+#: home/templates/footer.html:55 home/templates/header.html:96
+msgid "Home"
+msgstr ""
+
+#: home/templates/blog-details.html:29 home/templates/blog-details.html:68
+#: home/templates/blog-details.html:77
+msgid "Blog Detail"
+msgstr ""
+
+#: home/templates/blog-details.html:104
+msgid "SHARE"
+msgstr ""
+
+#: home/templates/blog-details.html:128 home/templates/blog.html:138
+msgid "Recent Posts"
+msgstr ""
+
+#: home/templates/blog-details.html:143 home/templates/blog.html:153
+#: home/templates/courses-details.html:136 home/templates/index.html:453
+msgid "Comment"
+msgstr ""
+
+#: home/templates/blog-details.html:153
+msgid "Our Gallery"
+msgstr ""
+
+#: home/templates/blog.html:29 home/templates/blog.html:74
+#: home/templates/blog.html:83 home/templates/footer.html:68
+#: home/templates/header.html:101 home/templates/header.html:114
+msgid "Blog"
+msgstr ""
+
+#: home/templates/blog.html:165
+msgid "Our Course All"
+msgstr ""
+
+#: home/templates/category_course.html:30
+msgid "Category Course"
+msgstr ""
+
+#: home/templates/category_course.html:73
+msgid "Category Courses"
+msgstr ""
+
+#: home/templates/category_course.html:82 home/templates/courses.html:73
+#: home/templates/courses.html:82 home/templates/header.html:106
+msgid "Our Courses"
+msgstr ""
+
+#: home/templates/category_course.html:96 home/templates/courses.html:96
+msgid "All Course Category"
+msgstr ""
+
+#: home/templates/category_course.html:115 home/templates/courses.html:115
+#: home/templates/index.html:248
+msgid "Read More"
+msgstr ""
+
+#: home/templates/category_course.html:119 home/templates/courses.html:119
+msgid "Programming"
+msgstr ""
+
+#: home/templates/contact-us.html:29 home/templates/contact-us.html:71
+#: home/templates/contact-us.html:80 home/templates/header.html:102
+msgid "Contact Us"
+msgstr ""
+
+#: home/templates/contact-us.html:93 home/templates/faq.html:172
+#: home/templates/footer.html:58
+msgid "Contact"
+msgstr ""
+
+#: home/templates/contact-us.html:93 home/templates/faq.html:172
+msgid "Information"
+msgstr ""
+
+#: home/templates/contact-us.html:98 home/templates/faq.html:179
+msgid "Support Line"
+msgstr ""
+
+#: home/templates/contact-us.html:122
+msgid "Get In "
+msgstr ""
+
+#: home/templates/contact-us.html:122
+msgid "Touch"
+msgstr ""
+
+#: home/templates/contact-us.html:123 home/templates/courses-details.html:244
+#: home/templates/index.html:237 home/templates/index.html:389
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page"
+msgstr ""
+
+#: home/templates/contact-us.html:129 home/templates/courses-details.html:250
+msgid "Your Name"
+msgstr ""
+
+#: home/templates/contact-us.html:138 home/templates/courses-details.html:259
+msgid "Your Email Address"
+msgstr ""
+
+#: home/templates/contact-us.html:146
+msgid "Your Phone"
+msgstr ""
+
+#: home/templates/contact-us.html:154
+msgid "Subject"
+msgstr ""
+
+#: home/templates/contact-us.html:162 home/templates/courses-details.html:268
+msgid "Type Message"
+msgstr ""
+
+#: home/templates/contact-us.html:169
+msgid "Send Message"
+msgstr ""
+
+#: home/templates/courses-details.html:29
+msgid "Course Details"
+msgstr ""
+
+#: home/templates/courses-details.html:72
+#: home/templates/courses-details.html:81
+msgid "Courses Details"
+msgstr ""
+
+#: home/templates/courses-details.html:100
+msgid "Buy Now This Courses"
+msgstr ""
+
+#: home/templates/courses-details.html:125
+msgid "Categories"
+msgstr ""
+
+#: home/templates/courses-details.html:131
+msgid "Overview"
+msgstr ""
+
+#: home/templates/courses-details.html:132
+msgid "Curriculum"
+msgstr ""
+
+#: home/templates/courses-details.html:134
+#: home/templates/courses-details.html:186
+msgid "Instructor"
+msgstr ""
+
+#: home/templates/courses-details.html:167
+msgid "Duration"
+msgstr ""
+
+#: home/templates/courses-details.html:169
+msgid "Skill level"
+msgstr ""
+
+#: home/templates/courses-details.html:171
+msgid "Language"
+msgstr ""
+
+#: home/templates/courses-details.html:173
+msgid "Assessments"
+msgstr ""
+
+#: home/templates/courses-details.html:174
+msgid "Yes"
+msgstr ""
+
+#: home/templates/courses-details.html:178
+msgid "Course Description"
+msgstr ""
+
+#: home/templates/courses-details.html:212
+msgid "Comments"
+msgstr ""
+
+#: home/templates/courses-details.html:221
+msgid "says"
+msgstr ""
+
+#: home/templates/courses-details.html:243
+msgid "Coomment"
+msgstr ""
+
+#: home/templates/courses.html:30
+msgid "All Courses"
+msgstr ""
+
+#: home/templates/error-404.html:29
+msgid "404-Eror"
+msgstr ""
+
+#: home/templates/error-404.html:68
+msgid "Ooopps"
+msgstr ""
+
+#: home/templates/error-404.html:70
+msgid "The Page you were looking for, couldnt be found."
+msgstr ""
+
+#: home/templates/error-404.html:71
+msgid ""
+"The page you are looking for might have been removed, had its name changed, "
+"or is temporarily unavailable."
+msgstr ""
+
+#: home/templates/error-404.html:73
+msgid "Preview"
+msgstr ""
+
+#: home/templates/error-404.html:74
+msgid "Back To Home"
+msgstr ""
+
+#: home/templates/faq.html:30 home/templates/footer.html:57
+msgid "FAQs"
+msgstr ""
+
+#: home/templates/faq.html:72
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: home/templates/faq.html:81
+msgid "Faqs"
+msgstr ""
+
+#: home/templates/faq.html:99 home/templates/faq.html:132
+msgid "Our Philosophy"
+msgstr ""
+
+#: home/templates/faq.html:100 home/templates/faq.html:111
+#: home/templates/faq.html:122 home/templates/faq.html:133
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
+"nibh euismod.."
+msgstr ""
+
+#: home/templates/faq.html:110
+msgid "Kingster's Principle"
+msgstr ""
+
+#: home/templates/faq.html:121
+msgid "Key Of Success"
+msgstr ""
+
+#: home/templates/faq.html:146
+msgid "Asked"
+msgstr ""
+
+#: home/templates/faq.html:146
+msgid "Questions"
+msgstr ""
+
+#: home/templates/faq.html:148 home/templates/faq.html:149
+#: home/templates/faq.html:166 home/templates/faq.html:167
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+"when an unknown printer took a galley of type and scrambled it."
+msgstr ""
+
+#: home/templates/faq.html:173
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+msgstr ""
+
+#: home/templates/faq.html:183
+msgid "Follow Us"
+msgstr ""
+
+#: home/templates/faq.html:212
+msgid "Completed Projects"
+msgstr ""
+
+#: home/templates/faq.html:220
+msgid "Happy Clients"
+msgstr ""
+
+#: home/templates/faq.html:228
+msgid "Questions Answered"
+msgstr ""
+
+#: home/templates/faq.html:236
+msgid "Ordered Coffee's"
+msgstr ""
+
+#: home/templates/footer.html:31
+msgid "Sign Up For A Newsletter"
+msgstr ""
+
+#: home/templates/footer.html:32
+msgid ""
+"Weekly Breaking news analysis and cutting edge advices on job searching."
+msgstr ""
+
+#: home/templates/footer.html:42
+msgid "Subscribe"
+msgstr ""
+
+#: home/templates/footer.html:53
+msgid "Company"
+msgstr ""
+
+#: home/templates/footer.html:56 home/templates/header.html:99
+msgid "About"
+msgstr ""
+
+#: home/templates/footer.html:64
+msgid "Get In Touch"
+msgstr ""
+
+#: home/templates/footer.html:66 home/templates/header.html:117
+msgid "Dashboard"
+msgstr ""
+
+#: home/templates/footer.html:69 home/templates/footer.html:76
+#: home/templates/index.html:236
+msgid "Courses"
+msgstr ""
+
+#: home/templates/footer.html:70 home/templates/header.html:103
+msgid "Page"
+msgstr ""
+
+#: home/templates/header.html:9
+msgid "Ask a Question"
+msgstr ""
+
+#: home/templates/header.html:40
+msgid "Login"
+msgstr ""
+
+#: home/templates/header.html:41
+msgid "Register"
+msgstr ""
+
+#: home/templates/header.html:85
+msgid "Search for items..."
+msgstr ""
+
+#: home/templates/header.html:97
+msgid "Pages"
+msgstr ""
+
+#: home/templates/header.html:100 home/templates/header.html:116
+msgid "FAQ's"
+msgstr ""
+
+#: home/templates/header.html:115
+msgid "Contac Us"
+msgstr ""
+
+#: home/templates/index.html:29
+msgid "Education home page"
+msgstr ""
+
+#: home/templates/index.html:168
+msgid "Batter Education For A Better"
+msgstr ""
+
+#: home/templates/index.html:219
+msgid "View More"
+msgstr ""
+
+#: home/templates/index.html:236
+msgid "Popular"
+msgstr ""
+
+#: home/templates/index.html:256
+msgid "Review"
+msgstr ""
+
+#: home/templates/index.html:286
+msgid "Online Courses To Learn"
+msgstr ""
+
+#: home/templates/index.html:287
+msgid "Own Your Feature Learning New Skills Online"
+msgstr ""
+
+#: home/templates/index.html:294 home/templates/search.html:30
+#: home/templates/search.html:73
+msgid "Search"
+msgstr ""
+
+#: home/templates/index.html:307
+msgid "Over"
+msgstr ""
+
+#: home/templates/index.html:307
+msgid "student"
+msgstr ""
+
+#: home/templates/index.html:323
+msgid "Learn Anythink Online."
+msgstr ""
+
+#: home/templates/index.html:335
+msgid "Adversiting"
+msgstr ""
+
+#: home/templates/index.html:336
+msgid "Upcoming Education Events To Feed Brain."
+msgstr ""
+
+#: home/templates/index.html:377
+msgid "View All Event"
+msgstr ""
+
+#: home/templates/index.html:388
+msgid "what people"
+msgstr ""
+
+#: home/templates/index.html:388
+msgid "say"
+msgstr ""
+
+#: home/templates/index.html:400
+msgid "Art Director"
+msgstr ""
+
+#: home/templates/index.html:403 home/templates/index.html:417
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industry's standard dummy text ever since the "
+"1500s, when an unknown printer took a galley of type..."
+msgstr ""
+
+#: home/templates/index.html:414
+msgid "Web Designer"
+msgstr ""
+
+#: home/templates/index.html:431
+msgid "Recent"
+msgstr ""
+
+#: home/templates/index.html:431
+msgid "News"
+msgstr ""
+
+#: home/templates/index.html:432
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page<"
+msgstr ""
+
+#: home/templates/index.html:451
+msgid "READ MORE"
+msgstr ""
+
+#: home/templates/search.html:92
+msgid "Course"
+msgstr ""
+
+#: home/templates/search.html:93
+msgid "Price"
+msgstr ""
+
+#: home/templates/search.html:94
+msgid "Action"
+msgstr ""
+
+#: home/templates/search.html:110
+msgid "so'm"
+msgstr ""
+
+#: home/templates/search.html:116
+msgid "Add to cart"
+msgstr ""
+
+#: home/templates/search.html:126
+msgid "Sorry, we couldn't find any results matching your search"
+msgstr ""
+
+#: home/templates/search.html:131
+msgid ""
+"You can search again or return to the homepage by checking the word you "
+"typed. "
+msgstr ""

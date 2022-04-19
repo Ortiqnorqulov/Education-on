@@ -1,0 +1,508 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-22 03:13+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: home/templates/about-1.html:29 home/templates/about-1.html:72
+#: home/templates/about-1.html:80
+msgid "About Us"
+msgstr "Biz Haqimizda"
+
+#: home/templates/about-1.html:79 home/templates/blog-details.html:76
+#: home/templates/blog.html:82 home/templates/category_course.html:81
+#: home/templates/contact-us.html:79 home/templates/courses-details.html:80
+#: home/templates/courses.html:81 home/templates/faq.html:80
+#: home/templates/footer.html:55 home/templates/header.html:96
+msgid "Home"
+msgstr "Bosh Sahifa"
+
+#: home/templates/blog-details.html:29 home/templates/blog-details.html:68
+#: home/templates/blog-details.html:77
+msgid "Blog Detail"
+msgstr "Blog Elementi"
+
+#: home/templates/blog-details.html:104
+msgid "SHARE"
+msgstr "Ulashish"
+
+#: home/templates/blog-details.html:128 home/templates/blog.html:138
+msgid "Recent Posts"
+msgstr "Oxirgi xabarlar"
+
+#: home/templates/blog-details.html:143 home/templates/blog.html:153
+#: home/templates/courses-details.html:136 home/templates/index.html:453
+msgid "Comment"
+msgstr "Komentariya"
+
+#: home/templates/blog-details.html:153
+msgid "Our Gallery"
+msgstr "Bizning galereyamiz"
+
+#: home/templates/blog.html:29 home/templates/blog.html:74
+#: home/templates/blog.html:83 home/templates/footer.html:68
+#: home/templates/header.html:101 home/templates/header.html:114
+msgid "Blog"
+msgstr "Blog"
+
+#: home/templates/blog.html:165
+msgid "Our Course All"
+msgstr "Kurslarimiz"
+
+#: home/templates/category_course.html:30
+msgid "Category Course"
+msgstr "Kurs kategoriyasi"
+
+#: home/templates/category_course.html:73
+msgid "Category Courses"
+msgstr "Kurslar kategoriyasi"
+
+#: home/templates/category_course.html:82 home/templates/courses.html:73
+#: home/templates/courses.html:82 home/templates/header.html:106
+msgid "Our Courses"
+msgstr "Bizning Kurslar"
+
+#: home/templates/category_course.html:96 home/templates/courses.html:96
+msgid "All Course Category"
+msgstr "Kurslar kategoriyasi"
+
+#: home/templates/category_course.html:115 home/templates/courses.html:115
+#: home/templates/index.html:248
+msgid "Read More"
+msgstr "Ko'proq o'qish"
+
+#: home/templates/category_course.html:119 home/templates/courses.html:119
+msgid "Programming"
+msgstr "Dasturlash"
+
+#: home/templates/contact-us.html:29 home/templates/contact-us.html:71
+#: home/templates/contact-us.html:80 home/templates/header.html:102
+msgid "Contact Us"
+msgstr "Biz bilan bog'lanish"
+
+#: home/templates/contact-us.html:93 home/templates/faq.html:172
+#: home/templates/footer.html:58
+msgid "Contact"
+msgstr "Bog'lanish"
+
+#: home/templates/contact-us.html:93 home/templates/faq.html:172
+    msgid "Information"
+msgstr "Ma `lumot"
+
+#: home/templates/contact-us.html:98 home/templates/faq.html:179
+msgid "Support Line"
+msgstr "Qo'llab-quvvatlash liniyasi"
+
+#: home/templates/contact-us.html:122
+msgid "Get In "
+msgstr "Aloqaga "
+
+#: home/templates/contact-us.html:122
+msgid "Touch"
+msgstr "Chiqing"
+
+#: home/templates/contact-us.html:123 home/templates/courses-details.html:244
+#: home/templates/index.html:237 home/templates/index.html:389
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page"
+msgstr "O'quvchining diqqatini o'zi bilan chalg'itishi uzoq vaqtdan beri tasdiqlangan haqiqatdir sahifaning o'qilishi mumkin bo'lgan mazmuni"
+
+#: home/templates/contact-us.html:129 home/templates/courses-details.html:250
+msgid "Your Name"
+msgstr "Sizning Ismingiz"
+
+#: home/templates/contact-us.html:138 home/templates/courses-details.html:259
+msgid "Your Email Address"
+msgstr "Emailingiz"
+
+#: home/templates/contact-us.html:146
+msgid "Your Phone"
+msgstr "Telefon Raqamingiz"
+
+#: home/templates/contact-us.html:154
+msgid "Subject"
+msgstr "Mavzu"
+
+#: home/templates/contact-us.html:162 home/templates/courses-details.html:268
+msgid "Type Message"
+msgstr "Xabarni yozing"
+
+#: home/templates/contact-us.html:169
+msgid "Send Message"
+msgstr "Xabar yuborish"
+
+#: home/templates/courses-details.html:29
+msgid "Course Details"
+msgstr "Kurs elementi"
+
+#: home/templates/courses-details.html:72
+#: home/templates/courses-details.html:81
+msgid "Courses Details"
+msgstr "Kurs elementi"
+
+#: home/templates/courses-details.html:100
+msgid "Buy Now This Courses"
+msgstr "Ushbu kursni hozir sotib oling"
+
+#: home/templates/courses-details.html:125
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+#: home/templates/courses-details.html:131
+msgid "Overview"
+msgstr "Umumiy koʻrinish"
+
+#: home/templates/courses-details.html:132
+msgid "Curriculum"
+msgstr "O'quv dasturi"
+
+#: home/templates/courses-details.html:134
+#: home/templates/courses-details.html:186
+msgid "Instructor"
+msgstr "Instruktor"
+
+#: home/templates/courses-details.html:167
+msgid "Duration"
+msgstr "Davomiyligi"
+
+#: home/templates/courses-details.html:169
+msgid "Skill level"
+msgstr "Malaka darajasi"
+
+#: home/templates/courses-details.html:171
+msgid "Language"
+msgstr "Til"
+
+#: home/templates/courses-details.html:173
+msgid "Assessments"
+msgstr "Baholar"
+
+#: home/templates/courses-details.html:174
+msgid "Yes"
+msgstr "Ha"
+
+#: home/templates/courses-details.html:178
+msgid "Course Description"
+msgstr "Course Description"
+
+#: home/templates/courses-details.html:212
+msgid "Comments"
+msgstr "Komentariyalar"
+
+#: home/templates/courses-details.html:221
+msgid "says"
+msgstr "deydi"
+
+#: home/templates/courses-details.html:243
+msgid "Coomment"
+msgstr "Komentariya"
+
+#: home/templates/courses.html:30
+msgid "All Courses"
+msgstr "Barcha Kurslar"
+
+#: home/templates/error-404.html:29
+msgid "404-Eror"
+msgstr "404-Xato"
+
+#: home/templates/error-404.html:68
+msgid "Ooopps"
+msgstr "Voy"
+
+#: home/templates/error-404.html:70
+msgid "The Page you were looking for, couldnt be found."
+msgstr "Siz qidirayotgan sahifa topilmadi."
+
+#: home/templates/error-404.html:71
+msgid ""
+"The page you are looking for might have been removed, had its name changed, "
+"or is temporarily unavailable."
+msgstr "Siz qidirayotgan sahifa oʻchirilgan, nomi oʻzgartirilgan yoki vaqtincha mavjud boʻlmagan boʻlishi mumkin."
+
+#: home/templates/error-404.html:73
+msgid "Preview"
+msgstr "Ko‘rib chiqish"
+
+#: home/templates/error-404.html:74
+msgid "Back To Home"
+msgstr "Uyga qaytish"
+
+#: home/templates/faq.html:30 home/templates/footer.html:57
+msgid "FAQs"
+msgstr "KBSlar"
+
+#: home/templates/faq.html:72
+msgid "Frequently Asked Questions"
+msgstr "Tez-tez so'raladigan savollar"
+
+#: home/templates/faq.html:81
+msgid "Faqs"
+msgstr "KBSlar"
+
+#: home/templates/faq.html:99 home/templates/faq.html:132
+msgid "Our Philosophy"
+msgstr "Bizning falsafamiz"
+
+#: home/templates/faq.html:100 home/templates/faq.html:111
+#: home/templates/faq.html:122 home/templates/faq.html:133
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
+"nibh euismod.."
+msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
+
+#: home/templates/faq.html:110
+msgid "Kingster's Principle"
+msgstr "Kingster printsipi"
+
+#: home/templates/faq.html:121
+msgid "Key Of Success"
+msgstr "Muvaffaqiyat kaliti"
+
+#: home/templates/faq.html:146
+msgid "Asked"
+msgstr "So'radi"
+
+#: home/templates/faq.html:146
+msgid "Questions"
+msgstr "Savollar"
+
+#: home/templates/faq.html:148 home/templates/faq.html:149
+#: home/templates/faq.html:166 home/templates/faq.html:167
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, "
+"when an unknown printer took a galley of type and scrambled it."
+msgstr "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+
+#: home/templates/faq.html:173
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+msgstr "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+
+#: home/templates/faq.html:183
+msgid "Follow Us"
+msgstr "Bizni kuzatib boring"
+
+#: home/templates/faq.html:212
+msgid "Completed Projects"
+msgstr "Tugallangan loyihalar"
+
+#: home/templates/faq.html:220
+msgid "Happy Clients"
+msgstr "Baxtli mijozlar"
+
+#: home/templates/faq.html:228
+msgid "Questions Answered"
+msgstr "Savollarga javob berildi"
+
+#: home/templates/faq.html:236
+msgid "Ordered Coffee's"
+msgstr "Buyurtma qilingan kofe"
+
+#: home/templates/footer.html:31
+msgid "Sign Up For A Newsletter"
+msgstr "Axborot byulleteniga yoziling"
+
+#: home/templates/footer.html:32
+msgid ""
+"Weekly Breaking news analysis and cutting edge advices on job searching."
+msgstr "Haftalik yangiliklar tahlili va ish qidirish bo'yicha ilg'or maslahatlar."
+
+#: home/templates/footer.html:42
+msgid "Subscribe"
+msgstr "Obuna boʻling"
+
+#: home/templates/footer.html:53
+msgid "Company"
+msgstr "Kompaniya"
+
+#: home/templates/footer.html:56 home/templates/header.html:99
+msgid "About"
+msgstr "Haqida"
+
+#: home/templates/footer.html:64
+msgid "Get In Touch"
+msgstr "Aloqaga chiqing"
+
+#: home/templates/footer.html:66 home/templates/header.html:117
+msgid "Dashboard"
+msgstr "Admin Panel"
+
+#: home/templates/footer.html:69 home/templates/footer.html:76
+#: home/templates/index.html:236
+msgid "Courses"
+msgstr "Kurslar"
+
+#: home/templates/footer.html:70 home/templates/header.html:103
+msgid "Page"
+msgstr ""
+
+#: home/templates/header.html:9
+msgid "Ask a Question"
+msgstr "Savol bering"
+
+#: home/templates/header.html:40
+msgid "Login"
+msgstr "Kirish"
+
+#: home/templates/header.html:41
+msgid "Register"
+msgstr "Ro'yxatdan o'tish"
+
+#: home/templates/header.html:85
+msgid "Search for items..."
+msgstr "Elementlarni qidirish..."
+
+#: home/templates/header.html:97
+msgid "Pages"
+msgstr "Sahifalar"
+
+#: home/templates/header.html:100 home/templates/header.html:116
+msgid "FAQ's"
+msgstr "KBS's"
+
+#: home/templates/header.html:115
+msgid "Contac Us"
+msgstr "Biz bilan bog'lanish"
+
+#: home/templates/index.html:29
+msgid "Education home page"
+msgstr "Ta'lim bosh sahifasi"
+
+#: home/templates/index.html:168
+msgid "Batter Education For A Better"
+msgstr "Yaxshisi uchun Batter Education"
+
+#: home/templates/index.html:219
+msgid "View More"
+msgstr "Koʻproq koʻrish"
+
+#: home/templates/index.html:236
+msgid "Popular"
+msgstr "Mashhur"
+
+#: home/templates/index.html:256
+msgid "Review"
+msgstr "Ko‘rib chiqish"
+
+#: home/templates/index.html:286
+msgid "Online Courses To Learn"
+msgstr "O'rganish uchun onlayn kurslar"
+
+#: home/templates/index.html:287
+msgid "Own Your Feature Learning New Skills Online"
+msgstr "Yangi ko'nikmalarni onlayn o'rganish xususiyatiga egalik qiling"
+
+#: home/templates/index.html:294 home/templates/search.html:30
+#: home/templates/search.html:73
+msgid "Search"
+msgstr "Qidirish"
+
+#: home/templates/index.html:307
+msgid "Over"
+msgstr "Ustida"
+
+#: home/templates/index.html:307
+msgid "student"
+msgstr "Talaba"
+
+#: home/templates/index.html:323
+msgid "Learn Anythink Online."
+msgstr "Har qanday narsani onlayn o'rganing."
+
+#: home/templates/index.html:335
+msgid "Adversiting"
+msgstr "Reklama"
+
+#: home/templates/index.html:336
+msgid "Upcoming Education Events To Feed Brain."
+msgstr "Miyani oziqlantirish uchun kelgusi ta'lim tadbirlari."
+
+#: home/templates/index.html:377
+msgid "View All Event"
+msgstr "Barcha voqealarni ko'rish"
+
+#: home/templates/index.html:388
+msgid "what people"
+msgstr "Odamlar nima"
+
+#: home/templates/index.html:388
+msgid "say"
+msgstr "deydi"
+
+#: home/templates/index.html:400
+msgid "Art Director"
+msgstr "Badiiy direktor"
+
+#: home/templates/index.html:403 home/templates/index.html:417
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industry's standard dummy text ever since the "
+"1500s, when an unknown printer took a galley of type..."
+msgstr "Lorem Ipsum matbaa va matn terish sanoatining oddiygina soxta matnidir.Lorem Ipsum matbaa va matn terish sanoatining oddiygina soxta matnidir.Lorem Ipsum matbaa va matn terish sanoatining oddiygina soxta matnidir."
+
+#: home/templates/index.html:414
+msgid "Web Designer"
+msgstr "Web dizayner"
+
+#: home/templates/index.html:431
+msgid "Recent"
+msgstr "Yaqinda"
+
+#: home/templates/index.html:431
+msgid "News"
+msgstr "Yangiliklar"
+
+#: home/templates/index.html:432
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page<"
+msgstr "O'quvchini sahifaning o'qilishi mumkin bo'lgan mazmuni chalg'itishi uzoq vaqtdan beri tasdiqlangan haqiqatdir"
+
+#: home/templates/index.html:451
+msgid "READ MORE"
+msgstr "Ko'proq O'qish"
+
+#: home/templates/search.html:92
+msgid "Course"
+msgstr "Kurs"
+
+#: home/templates/search.html:93
+msgid "Price"
+msgstr "Narx"
+
+#: home/templates/search.html:94
+msgid "Action"
+msgstr "Harakat"
+
+#: home/templates/search.html:110
+msgid "so'm"
+msgstr "so'm"
+
+#: home/templates/search.html:116
+msgid "Add to cart"
+msgstr "Savatga qo'shish"
+
+#: home/templates/search.html:126
+msgid "Sorry, we couldn't find any results matching your search"
+msgstr "Kechirasiz, qidiruvingizga mos keladigan natija topilmadi"
+
+#: home/templates/search.html:131
+msgid ""
+"You can search again or return to the homepage by checking the word you "
+"typed. "
+msgstr "Siz kiritgan so'zni tekshirish orqali yana qidirishingiz yoki bosh sahifaga qaytishingiz mumkin."

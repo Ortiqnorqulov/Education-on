@@ -1,0 +1,180 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : {% trans 'Search' %} </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner3.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <br><br><br><br>
+                    <h1 class="text-white">{% trans 'Search' %}</h1>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+        <div>
+            <h2 style="text-align: center; color: #3f189a; margin-top: 50px; margin-bottom: 30px">
+                Result
+            </h2>
+        </div>
+            <section class="mt-50 mb-50" style="margin-bottom: 50px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table class="table shopping-summery text-center">
+                                    <thead>
+                                    <tr class="main-heading">
+                                        <th scope="col" colspan="2">{% trans 'Course' %}</th>
+                                        <th scope="col">{% trans 'Price' %}</th>
+                                        <th scope="col">{% trans 'Action' %}</th>
+                                    </tr>
+                                    </thead>
+                                    {% if course %}
+                                        {% for rs in course %}
+                                            <tbody>
+                                            <tr>
+                                                <td class="image product-thumbnail"><img src="{{ rs.image.url }}"
+                                                                                         alt="#" style="height: 50px; width: 50px; border: 1px solid black; border-radius: 50%;">
+                                                </td>
+                                                <td class="product-des product-name">
+                                                    <h5 class="product-name"><a
+                                                            href="{% url 'course_detail' rs.id rs.slug %}">{{ rs.title }}</a>
+                                                    </h5>
+                                                </td>
+                                                <td class="price" data-title="Price">
+                                                    <span>{{ rs.sell_price }} {% trans "so'm" %}</span></td>
+
+                                                <td class="text-right" data-title="Cart">
+                                                    <button class="btn btn-sm"><a
+                                                            href="{% url 'course_detail' rs.id rs.slug %}"> <i
+                                                            class="fi-rs-shopping-bag mr-5"
+                                                            style="color: #f9fafb">{% trans 'Add to cart' %}</i></a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        {% endfor %}
+                                    {% else %}
+                                        <center><img src="{% static 'assets/images/download.png' %}"></center>
+                                        <center>
+                                            <br>
+                                            <h3>{% trans "Sorry, we couldn't find any results matching your search" %}
+                                                <i
+                                                        style="color: red">"{{ searched }}". </i></h3>
+                                            <br>
+
+                                            <h5>{% trans 'You can search again or return to the homepage by checking the word you typed. ' %}</h5>
+                                            <br>
+                                            <br>
+                                        </center>
+                                    {% endif %}
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        {% include 'footer.html' %}
+    </div>
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+    <script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+    <script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+    <script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+    <script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+    <script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+    <script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'assets/js/functions.js' %}"></script>
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+    <!-- Revolution JavaScripts Files -->
+    <script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+</body>
+
+
+</html>

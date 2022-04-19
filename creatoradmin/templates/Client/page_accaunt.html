@@ -1,0 +1,331 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : Education HTML Template </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner1.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <br><br><br><br>
+                    <h1 class="text-white">Profile</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Profile</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+        <div class="content-block">
+            <!-- About Us -->
+            <div class="section-area section-sp1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+                            <div class="profile-bx text-center">
+                                <div class="user-profile-thumb">
+                                    <img src="{{ client.image.url }}" alt=""/>
+                                </div>
+                                <div class="profile-info">
+                                    <h4>{{ client.user }}</h4>
+                                    <span>{{ client.email }}</span>
+                                </div>
+                                <div class="profile-social">
+
+                                </div>
+                                <div class="profile-tabnav">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#courses"><i
+                                                    class="ti-book"></i>Courses</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#edit-profile"><i
+                                                    class="ti-pencil-alt"></i>Edit Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#change-password"><i
+                                                    class="ti-lock"></i>Change Password</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'logout_form' %}" style="color: red"><i
+                                                    class="ti-log-out"></i>Log Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-12 m-b30">
+                            <div class="profile-content-bx">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="courses">
+                                        <div class="profile-head">
+                                            <h3>My Courses</h3>
+                                            <div class="feature-filters style1 ml-auto">
+                                                <ul class="filters" data-toggle="buttons">
+                                                    <li data-filter="" class="btn active">
+                                                        <input type="radio">
+                                                        <a href="#"><span>All</span></a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="courses-filter">
+                                            <div class="clearfix">
+                                                <div class="card-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    {% trans 'Course' %}
+                                                                </th>
+
+
+
+                                                                <th>
+                                                                    {% trans 'Details' %}
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {% for rs in ordeer %}
+                                                                <tr>
+                                                                    <td style="color: blue"0>
+                                                                        {{ rs.title }}
+                                                                    </td>
+
+                                                                    <td>
+                                                                        <a href="{% url 'user_orders_product' %}">
+                                                                            <i class="fas fa-angle-double-right menu-icon"
+                                                                               style="padding-left: 20px">>></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            {% endfor %}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="edit-profile">
+                                        <div class="profile-head">
+                                            <h3>Edit Profile</h3>
+                                        </div>
+                                        <form class="forms-sample" method="post" enctype="multipart/form-data"
+                                              action="{% url 'user_update_client' %}">
+                                            {% csrf_token %}
+
+                                            <div class="form-group">
+                                                <label for="exampleInputName1">{% trans 'User Name' %}</label>
+                                                <input type="text" name="username" value="{{ client.user.username }}"
+                                                       class="form-control" id="exampleInputName1">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputName1">{% trans 'First Name' %}</label>
+                                                <input type="text" name="first_name"
+                                                       value="{{ client.user.first_name }}"
+                                                       class="form-control" id="exampleInputName1">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputName1">{% trans 'Lastname' %}</label>
+                                                <input type="text" name="last_name" value="{{ client.user.last_name }}"
+                                                       class="form-control" id="exampleInputName1">
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail3">{% trans 'Email' %}</label>
+                                                <input type="email" name="email" value="{{ client.user.email }}"
+                                                       class="form-control" id="exampleInputEmail3">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword4">{% trans 'Phone' %}</label>
+                                                <input type="tel" name="phone" value="{{ client.phone }}"
+                                                       class="form-control" id="exampleInputPassword4">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword4">{% trans 'Address' %}</label>
+                                                <input type="text" name="address" value="{{ client.address }}"
+                                                       class="form-control" id="exampleInputPassword4">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword4">{% trans 'City' %}</label>
+                                                <input type="text" name="city" value="{{ client.city }}"
+                                                       class="form-control" id="exampleInputPassword4">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword4">{% trans 'Country' %}</label>
+                                                <input type="text" name="country" value="{{ client.country }}"
+                                                       class="form-control" id="exampleInputPassword4">
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label>{% trans 'Image' %}</label>
+                                                <div class="input-group col-xs-12">
+                                                    <input type="file" name="image"
+                                                           class="form-control file-upload-info">
+                                                    <span class="input-group-append">
+
+                                                </span>
+                                                </div>
+                                            </div>
+                                            <button type="submit"
+                                                    class="btn btn-primary mr-2">{% trans 'Submit' %}</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" id="change-password">
+                                        <div class="profile-head">
+                                            <h3>Change Password</h3>
+                                        </div>
+                                        <form class="forms-sample" method="post" action="{% url 'user_password_client' %}">
+                                            {% csrf_token %}
+
+                                            <div class="form-group">
+                                                <label for="exampleInputName1">{% trans 'Old Password' %}</label>
+                                                <input type="password" name="old_password" class="form-control"
+                                                       id="exampleInputName1">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputName1">{% trans 'New Password 1' %}</label>
+                                                <input type="password" name="new_password1" class="form-control"
+                                                       id="exampleInputName1">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputName1">{% trans 'New Password 2' %}</label>
+                                                <input type="password" name="new_password2" class="form-control"
+                                                       id="exampleInputName1">
+                                            </div>
+
+
+                                            <button type="submit"
+                                                    class="btn btn-primary mr-2">{% trans 'Submit' %}</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact area END -->
+    </div>
+    <!-- Content END-->
+    <!-- Footer ==== -->
+    {% include 'footer.html' %}
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+<!-- Revolution JavaScripts Files -->
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+</body>
+
+</html>

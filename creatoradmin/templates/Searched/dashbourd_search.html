@@ -1,0 +1,121 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'melody_static/vendors/iconfonts/font-awesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'melody_static/vendors/css/vendor.bundle.base.css' %}">
+    <link rel="stylesheet" href="{% static 'melody_static/vendors/css/vendor.bundle.addons.css' %}">
+    <link rel="stylesheet" href="{% static 'melody_static/css/style.css' %}">
+</head>
+
+<body>
+
+<div class="container-scroller">
+
+    {% include 'Menu/dashbourd_top_menu.html' %}
+
+    <div class="container-fluid page-body-wrapper">
+
+        {% include 'Menu/dashbourd_theme.html' %}
+
+        {% include 'Menu/dashbourd_left_menu.html' %}
+
+        <div class="main-panel">
+
+            <div class="content-wrapper">
+
+                <div class="page-header">
+                    <h3 class="page-title">
+                        {% trans 'Dashboard' %}
+                    </h3>
+                </div>
+
+                <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="card">
+                        {% if product %}
+                            <div class="card-body">
+                                <h4 class="card-title">{% trans 'Product' %}</h4>
+                                <p class="card-description">
+                                    {% trans 'Count' %}: <code>{{ product_count }}</code>
+                                </p>
+                                <div class="table-responsive" style="overflow-y: scroll; height: 175px;">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr style="text-align: center;">
+                                            <th>
+                                                {% trans 'PRODUCT' %}
+                                            </th>
+                                            <th>
+                                                {% trans 'TITLE' %}
+                                            </th>
+                                            <th>
+                                                {% trans 'OLD PRICE' %}
+                                            </th>
+                                            <th>
+                                                {% trans 'SELL PRICE' %}
+                                            </th>
+                                            <th>
+                                                {% trans 'CATEGORY' %}
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        {% for rs in product %}
+                                            <tr style="text-transform: uppercase; text-align: center">
+                                                <td>
+                                                    <img style="width: 30px; height: 30px; border-radius: 10px"
+                                                         src="{{ rs.image.url }}" alt="image"/>
+                                                </td>
+                                                <td>
+                                                    {{ rs.title }}
+                                                </td>
+                                                <td>
+                                                    {{ rs.old_price }}
+                                                </td>
+                                                <td>
+                                                    {{ rs.sell_price }}
+                                                </td>
+                                                <td>
+                                                    {{ rs.category }}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        {% else %}
+                            <p class="mt-3 ml-3">{% trans "Sorry, we couldn't find any results matching your search" %} <i
+                                        style="color: red">"{{ searched }}". </i></p>
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+
+            {% include 'Menu/footer.html' %}
+
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'melody_static/vendors/js/vendor.bundle.base.js' %}"></script>
+<script src="{% static 'melody_static/vendors/js/vendor.bundle.addons.js' %}"></script>
+<script src="{% static 'melody_static/js/off-canvas.js' %}"></script>
+<script src="{% static 'melody_static/js/hoverable-collapse.js' %}"></script>
+<script src="{% static 'melody_static/js/misc.js' %}"></script>
+<script src="{% static 'melody_static/js/settings.js' %}"></script>
+<script src="{% static 'melody_static/js/todolist.js' %}"></script>
+<script src="{% static 'melody_static/js/dashboard.js' %}"></script>
+
+</body>
+
+</html>

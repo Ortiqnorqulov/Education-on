@@ -1,0 +1,401 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : {% trans 'Course Details' %} </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner2.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <br><br><br><br>
+                    <h1 class="text-white">{% trans 'Courses Details' %}</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="#">{% trans 'Home' %}</a></li>
+                    <li>{% trans 'Courses Details' %}</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+        <div class="content-block">
+            <!-- About Us -->
+            <div class="section-area section-sp1">
+                <div class="container">
+                    <div class="row d-flex flex-row-reverse">
+                        <div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+
+                            <div class="course-detail-bx">
+                                <div class="course-price">
+                                    <del>${{ course.old_price }}</del>
+                                    <h4 class="price">${{ course.sell_price }}</h4>
+                                </div>
+                                <div class="course-buy-now text-center">
+                                    <a href="#reviews1"
+                                       class="btn radius-xl text-uppercase">{% trans 'Buy Now This Courses' %}</a>
+                                </div>
+                                <div class="teacher-bx">
+                                    <div class="teacher-info">
+                                        <div class="teacher-thumb">
+                                            <img src="{{ course.teacher.image.url }}" alt=""/>
+                                        </div>
+                                        <div class="teacher-name">
+                                            <h5>{{ course.teacher }}</h5>
+                                            <span>{{ course.category }} {% trans Teacher %}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cours-more-info">
+                                    <div class="review">
+                                        <span>3 Review</span>
+                                        <ul class="cours-star">
+                                            <li class="active"><i class="fa fa-star"></i></li>
+                                            <li class="active"><i class="fa fa-star"></i></li>
+                                            <li class="active"><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="price categories">
+                                        <span>{% trans 'Categories' %}</span>
+                                        <h5 class="text-primary">{{ course.category }}</h5>
+                                    </div>
+                                </div>
+                                <div class="course-info-list scroll-page">
+                                    <ul class="navbar">
+                                        <li><a class="nav-link" href="#overview"><i
+                                                class="ti-zip"></i>{% trans 'Overview' %}</a></li>
+                                        <li><a class="nav-link" href="#curriculum"><i
+                                                class="ti-bookmark-alt"></i>{% trans 'Curriculum' %}</a>
+                                        </li>
+                                        <li><a class="nav-link" href="#instructor"><i
+                                                class="ti-user"></i>{% trans 'Instructor' %}</a>
+                                        </li>
+                                        <li><a class="nav-link" href="#reviews"><i
+                                                class="ti-comments"></i>{% trans 'Comment' %}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-9 col-md-8 col-sm-12">
+
+                            <div class="courses-post">
+                                <div class="video-bx">
+                                    <iframe width="800" height="500" src="{{ course.link }}"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                </div>
+                                <div class="ttr-post-info">
+                                    <div class="ttr-post-title ">
+                                        <h2 class="post-title">{{ course.title }}</h2>
+                                    </div>
+                                    <div class="ttr-post-text">
+                                        <p>{{ course.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="courese-overview" id="overview">
+                                <h4>Overview</h4>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <ul class="course-features">
+                                            <li><i class="ti-time"></i> <span
+                                                    class="label">{% trans 'Duration' %}</span> <span
+                                                    class="value">{{ course.duration }} hours</span></li>
+                                            <li><i class="ti-stats-up"></i> <span
+                                                    class="label">{% trans 'Skill level' %}</span> <span
+                                                    class="value">{{ course.level }}</span></li>
+                                            <li><i class="ti-smallcap"></i> <span
+                                                    class="label">{% trans 'Language' %}</span> <span
+                                                    class="value">{{ course.lenguage }}</span></li>
+                                            <li><i class="ti-check-box"></i> <span
+                                                    class="label">{% trans 'Assessments' %}</span>
+                                                <span class="value">{% trans 'Yes' %}</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 col-lg-8">
+                                        <h5 class="m-b5">{% trans 'Course Description' %}</h5>
+                                        <p>{{ course.description }}/p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="" id="instructor">
+                                <h4>{% trans 'Instructor' %}</h4>
+                                <div class="instructor-bx">
+                                    <div class="instructor-author">
+                                        <img src="{{ course.teacher.image.url }}" alt="">
+                                    </div>
+                                    <div class="instructor-info">
+                                        <h6>{{ course.teacher.title }}</h6>
+                                        <span>Professor</span>
+                                        <ul class="list-inline m-tb10">
+                                            <li><a href="{{ course.teacher.facebook }}" class="btn sharp-sm facebook"><i
+                                                    class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li><a href="{{ course.teacher.twitter }}" class="btn sharp-sm twitter"><i
+                                                    class="fa fa-twitter"></i></a></li>
+                                            <li><a href="{{ course.teacher.telegram }}" class="btn sharp-sm telegram"><i
+                                                    class="fa fa-telegram"></i></a>
+                                            </li>
+                                            <li><a href="{{ course.teacher.instagram }}" class="btn sharp-sm instagram"><i
+                                                    class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                        <p class="m-b0">{{ course.teacher.description }}</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="" id="reviews">
+                                <h4>{% trans 'Comments' %}</h4>
+                                <div class="clear" id="comment-list">
+                                    <div class="comments-area" id="comments">
+                                        <div class="clearfix m-b20">
+                                            <!-- comment list END -->
+                                            <ol class="comment-list">
+                                                <li class="comment">
+                                                    {% for rs in coment %}
+                                                        <div class="comment-body">
+                                                            <div class="comment-author vcard"><cite
+                                                                    class="fn">{{ rs.name }}</cite> <span
+                                                                    class="says">{% trans 'says' %}:</span></div>
+                                                            <div class="comment-meta"><a href="#">{{ rs.creat_at }}
+                                                                am</a></div>
+                                                            <p>{{ rs.message }}</p>
+                                                        </div>
+                                                    {% endfor %}
+                                                    <!-- list END -->
+                                                </li>
+
+                                            </ol>
+                                            <!-- comment list END -->
+                                            <!-- Form -->
+
+                                            <!-- Form -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="contact-bx ajax-form"
+                                      action="" method="post">
+                                    {% csrf_token %}
+                                    <div class="ajax-message"></div>
+                                    <div class="heading-bx left">
+                                        <h2 class="title-head">{% trans 'Leave your ' %}<span>{% trans 'Coomment' %}</span>
+                                        </h2>
+                                        <p>{% trans 'It is a long established fact that a reader will be distracted by the readable content of a page' %}</p>
+                                    </div>
+                                    <div class="row placeani">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <label>{% trans 'Your Name' %}</label>
+                                                    <input name="name" type="text" required
+                                                           class="form-control valid-character">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <label>{% trans 'Your Email Address' %}</label>
+                                                    <input name="email" type="email" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <label>{% trans 'Type Message' %}</label>
+                                                    <textarea name="message" rows="4" class="form-control"
+                                                              required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <input name="submit" type="submit" value="Send Message"
+                                                   class="btn button-md">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                            <div class="heading-bx left" id="reviews1">
+
+                                <form method="post" class="contact-bx ajax-form" action="{% url 'coursebuy' %}">
+                                    {% csrf_token %}
+
+
+                                    <h2 class="title-head"
+                                        style="margin-top: 50px">{% trans 'Buy Now This Courses' %}</h2>
+                                    <div class="row placeani">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <select class="form-control" name="username" style="color: black">
+                                                        <option style="color: black">{{ client.user.username }}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <select class="form-control" name="title">
+                                                        <option style="color: black">{{ course.title }}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <label>{% trans 'E-Mail' %}</label>
+                                                    <input name="email" value="" class="form-control" type="email"
+                                                           required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <label>{% trans 'Phone' %}</label>
+                                                    <input name="phone" value=""
+                                                           class="form-control"
+                                                           type="tel" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-12">
+                                            <input class="btn button-md" value="Place order" type="submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact area END -->
+
+    </div>
+    <!-- Content END-->
+    <!-- Footer ==== -->
+    {% include 'footer.html' %}
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+<!-- Revolution JavaScripts Files -->
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script>
+    </body>
+
+    </html>

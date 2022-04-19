@@ -1,0 +1,131 @@
+{% load static %}
+{% load i18n %}
+<header class="header rs-nav header-transparent">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="topbar-left">
+                    <ul>
+                        <li><a href="{% url 'faq' %}"><i class="fa fa-question-circle"></i>{% trans 'Ask a Question' %}</a></li>
+                        {% for rs in info %}
+                            <li><a href=""><i class="fa fa-envelope-o"></i>{{ rs.email }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul>
+                        <li>
+                            <form action="{% url 'selectlanguage' %}" method="post" style="color: black">
+                                {% csrf_token %}
+                                <input name="text" type="hidden" value="{{ redirect_to }}"
+                                       style="color: black; background-color: #3f189a">
+                                <select name="language" onchange="submit()"
+                                        style="border: none; width: 120px; height: 30px; color: black; border-radius: 5px; color: black; background-color: #3f189a">
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% get_language_info_list for LANGUAGES as languages %}
+                                    {% for language in languages %}
+                                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                                                selected{% endif %} style="color: black; border-radius: 5px">
+                                            {{ language.name_local }} ({{ language.code }})
+                                        </option>
+                                    {% endfor %}
+                                </select>
+                                <noscript>
+                                    <input type="submit" value="Set"/>
+                                </noscript>
+                            </form>
+                        </li>
+
+                        <li><a href="{% url 'login_form' %}">{% trans 'Login' %}</a></li>
+                        <li><a href="{% url 'register' %}">{% trans 'Register' %}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-header navbar-expand-lg" style="background-color: #3f189a">
+        <div class="menu-bar clearfix">
+            <div class="container clearfix">
+                <!-- Header Logo ==== -->
+                <div class="menu-logo">
+                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo-white.png' %}" alt=""></a>
+                </div>
+                <!-- Mobile Nav Button ==== -->
+                <button class="navbar-toggler collapsed menuicon justify-content-end" type="button"
+                        data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Author Nav ==== -->
+                <div class="secondary-menu">
+                    <div class="secondary-inner">
+                        <ul>
+                            {% for rs in info %}
+                                <li><a href="{{ rs.facebook }}" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="{{ rs.instagram }}" class="btn-link"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li><a href="{{ rs.telegram }}" class="btn-link"><i class="fa fa-telegram"></i></a></li>
+                            {% endfor %}
+                            <!-- Search Button ==== -->
+                            <li class="search-btn">
+                                <button id="quik-search-btn" type="button" class="btn-link"><i
+                                        class="fa fa-search"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search Box ==== -->
+                <div class="nav-search-bar">
+                    <form action="{% url 'search' %}" method="post">
+                        {% csrf_token %}
+                        <input name="searched" value="" type="text" class="form-control"
+                               placeholder="{% trans 'Search for items...' %}">
+                        <span><i class="ti-search"></i></span>
+                    </form>
+                    <span id="search-remove"><i class="ti-close"></i></span>
+                </div>
+                <!-- Navigation Menu ==== -->
+                <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+                    <div class="menu-logo">
+                        <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="{% url 'home' %}">{% trans 'Home' %} <i class=""></i></a></li>
+                        <li><a href="javascript:;">{% trans 'Pages' %} <i class="fa fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'about' %}">{% trans 'About' %}<i class=""></i></a></li>
+                                <li><a href="{% url 'faq' %}">{% trans "FAQ's" %}<i class=""></i></a></li>
+                                <li><a href="{% url 'blog' %}">{% trans 'Blog' %}<i class=""></i></a></li>
+                                <li><a href="{% url 'contact' %}">{% trans 'Contact Us' %}<i class=""></i></a></li>
+                                <li><a href="{% url 'eror404' %}">404 {% trans 'Page' %}</a></li>
+                            </ul>
+                        </li>
+                        <li class="add-mega-menu"><a href="{% url 'coursesall' %}">{% trans 'Our Courses' %} <i
+                                class="fa fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                {% for rs in category %}
+                                <li><a href="{% url 'category_course' rs.id %}">{{ rs.title }}<i class=""></i></a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'blog' %}">{% trans 'Blog' %} <i class=""></i></a></li>
+                        <li><a href="{% url 'contact' %}">{% trans 'Contac Us' %} <i class=""></i></a></li>
+                        <li><a href="{% url 'faq' %}">{% trans "FAQ's" %} <i class=""></i></a></li>
+                        <li><a href="{% url 'about' %}">{% trans "About Us" %} <i class=""></i></a></li>
+                    </ul>
+                    <div class="nav-social-link">
+                        {% for rs in info %}
+                            <a href="{{ rs.facebook }}"><i class="fa fa-facebook"></i></a>
+                            <a href="{{ rs.instagram }}"><i class="fa fa-instagram"></i></a>
+                            <a href="{{ rs.telegram }}"><i class="fa fa-telegram"></i></a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- Navigation Menu END ==== -->
+            </div>
+        </div>
+    </div>
+</header>

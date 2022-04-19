@@ -1,0 +1,185 @@
+{% load static %}
+<nav class="ttr-sidebar-navi">
+    <ul>
+        <li>
+            <a href="{% url 'creator' %}" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/house-fill.svg' %}"></span>
+                <span class="ttr-label">Dashborad</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/newspaper.svg' %}"></span>
+                <span class="ttr-label">About</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'about_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add About</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'about_update' %}" class="ttr-material-button"><span class="ttr-label">About Update</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/window.svg' %}"></span>
+                <span class="ttr-label">News</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'news_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add News</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'news_update' %}" class="ttr-material-button"><span class="ttr-label">News Update</span></a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/newspaper.svg' %}"></span>
+                <span class="ttr-label">Adversiting</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'add_adversiting' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add Adversiting</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'adversiting_update' %}" class="ttr-material-button"><span class="ttr-label">Adversiting Update</span></a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/tags-fill.svg' %}"></span>
+                <span class="ttr-label">Category</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'category_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add Category</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'category_update' %}" class="ttr-material-button"><span class="ttr-label">Category Update</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/book.svg' %}"></span>
+                <span class="ttr-label">Course</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'course_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add Course</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'course_update' %}" class="ttr-material-button"><span class="ttr-label">Course Update</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'course_all' %}" class="ttr-material-button"><span class="ttr-label">Course All</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/patch-question.svg' %}"></span>
+                <span class="ttr-label">FAQs</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'faq_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add FAQ</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'faq_update' %}" class="ttr-material-button"><span class="ttr-label">FAQ Update</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/info-circle.svg' %}"></span>
+                <span class="ttr-label">Information</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'information_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add Information</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'information_update' %}" class="ttr-material-button"><span class="ttr-label">Information Update</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="{% url 'newsletter_get' %}" class="ttr-material-button">
+                <span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
+                <span class="ttr-label">NewsLetter</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><img src="{% static 'assestss/images/sliders.svg' %}"></span>
+                <span class="ttr-label">Slider</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'slider_add' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add Slider</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'slider_update' %}" class="ttr-material-button"><span class="ttr-label">Slider Update</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><i class="ti-user"></i></span>
+                <span class="ttr-label">Teacher Profile</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'addteacher' %}" class="ttr-material-button"><span
+                            class="ttr-label">Add Teacher</span></a>
+                </li>
+                <li>
+                    <a href="{% url 'teacher' %}" class="ttr-material-button"><span class="ttr-label">Teachers</span></a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" class="ttr-material-button">
+                <span class="ttr-icon"><i class="ti-user"></i></span>
+                <span class="ttr-label">My Profile</span>
+                <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{% url 'user_update' %}" class="ttr-material-button"><span
+                            class="ttr-label">Update Profile</span></a>
+                </li>
+                <li>
+                    <a href="#" class="ttr-material-button"><span class="ttr-label">Update Password</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="ttr-seperate"></li>
+    </ul>
+    <!-- sidebar menu end -->
+</nav>

@@ -1,0 +1,300 @@
+﻿{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : Education HTML Template </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner3.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <br><br><br><br>
+                    <h1 class="text-white">Our Courses</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="#">Home</a></li>
+                    <li>Our Courses</li>
+                </ul>
+            </div>
+        </div>
+
+<main class="main">
+    <section class="mt-50 mb-50">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <form method="post">
+                        {% csrf_token %}
+                        <fieldset>
+                            <h2 class="login-title mb-3">{% trans 'Billing details' %}</h2>
+                            <div class="row">
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                    <label for="input-firstname">{% trans 'First Name' %} <span
+                                            class="required-f">*</span></label>
+                                    <input name="first_name" value="" id="input-firstname" type="text">
+                                </div>
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                    <label for="input-lastname">{% trans 'Last Name' %} <span
+                                            class="required-f">*</span></label>
+                                    <input name="last_name" value="" id="input-lastname" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                    <label for="input-email">{% trans 'Email' %} <span
+                                            class="required-f">*</span></label>
+                                    <input name="email" value="" id="input-email" type="email">
+                                </div>
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                    <label for="input-telephone">{% trans 'Telephone' %} <span
+                                            class="required-f">*</span></label>
+                                    <input name="phone" value="" id="input-telephone" type="tel">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="row">
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                    <label for="input-company">{% trans 'Country' %}</label>
+                                    <input name="country" value="" id="input-company" type="text">
+                                </div>
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                    <label for="input-address-1">{% trans 'City' %} <span
+                                            class="required-f">*</span></label>
+                                    <input name="city" value="" id="input-address-1" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                    <label for="input-address-2">{% trans 'Address' %} <span class="required-f">*</span></label>
+                                    <input name="address" value="" id="input-address-2" type="text">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="row">
+                                <div class="form-group col-md-12 col-lg-12 col-xl-12">
+                                    <label for="input-company">{% trans 'Order Notes' %} <span
+                                            class="required-f">*</span></label>
+                                    <textarea class="form-control resize-both" rows="3" name="feedback"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="order-button-payment">
+                            <input class="btn" value="Place order" type="submit" style="background-color: #0a53be">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="order_review">
+                        <div class="mb-20">
+                            <h4>{% trans 'Your Orders' %}</h4>
+                        </div>
+                        <div class="table-responsive order_table text-center">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="text-left">{% trans 'Product Name' %}</th>
+                                    <th>{% trans 'Price' %}</th>
+                                    <th>{% trans 'Qty' %}</th>
+                                    <th>{% trans 'Amount' %}</th>
+                                    <th>{% trans 'Size' %}</th>
+                                    <th>{% trans 'Color' %}</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for rs in shopcart %}
+                                    <tr>
+                                        <td class="text-left">{{ rs.product.title }}</td>
+                                        <td>{{ rs.product.sell_price }}</td>
+                                        <td>{{ rs.quantity }}</td>
+                                        <td>{{ rs.amount }}</td>
+                                        <td>{{ rs.size }}</td>
+                                        <td style="background-color: {{ rs.collar }};"></td>
+                                    </tr>
+                                {% endfor %}
+
+                                <tr>
+                                    <th>{% trans 'Shipping' %}</th>
+                                    <td colspan="5"><em>{% trans 'Free Shipping' %}</em></td>
+                                </tr>
+                                <tr>
+                                    <th>{% trans 'Total' %}</th>
+                                    <td colspan="5" class="product-subtotal"><span
+                                            class="font-xl text-brand fw-900">{{ total }} {% trans "so'm" %}</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="bt-1 border-color-1 mt-30 mb-30"></div>
+                        <div class="payment_method">
+                            <div class="mb-25">
+
+
+
+
+
+
+
+
+
+
+
+                                <h5>Payment</h5>
+                            </div>
+                            <div class="payment_option">
+                                <div class="custome-radio">
+                                    <input class="form-check-input" required="" type="radio" name="payment_option"
+                                           id="exampleRadios3" checked="">
+                                    <label class="form-check-label" for="exampleRadios3" data-bs-toggle="collapse"
+                                           data-target="#bankTranfer" aria-controls="bankTranfer">Direct Bank
+                                        Transfer</label>
+                                    <div class="form-group collapse in" id="bankTranfer">
+                                        <p class="text-muted mt-5">There are many variations of passages of Lorem Ipsum
+                                            available, but the majority have suffered alteration. </p>
+                                    </div>
+                                </div>
+                                <div class="custome-radio">
+                                    <input class="form-check-input" required="" type="radio" name="payment_option"
+                                           id="exampleRadios4" checked="">
+                                    <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse"
+                                           data-target="#checkPayment" aria-controls="checkPayment">Check
+                                        Payment</label>
+                                    <div class="form-group collapse in" id="checkPayment">
+                                        <p class="text-muted mt-5">Please send your cheque to Store Name, Store Street,
+                                            Store Town, Store State / County, Store Postcode. </p>
+                                    </div>
+                                </div>
+                                <div class="custome-radio">
+                                    <input class="form-check-input" required="" type="radio" name="payment_option"
+                                           id="exampleRadios5" checked="">
+                                    <label class="form-check-label" for="exampleRadios5" data-bs-toggle="collapse"
+                                           data-target="#paypal" aria-controls="paypal">Paypal</label>
+                                    <div class="form-group collapse in" id="paypal">
+                                        <p class="text-muted mt-5">Pay via PayPal; you can pay with your credit card if
+                                            you don't have a PayPal account.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-fill-out btn-block mt-30" style="background-color: green">Place
+                            Order</a>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Vendor JS-->
+  {% include 'footer.html' %}
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+<!-- Revolution JavaScripts Files -->
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+
+<!-- Mirrored from wp.alithemes.com/html/evara/evara-frontend/shop-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 15:26:06 GMT -->
+</html>

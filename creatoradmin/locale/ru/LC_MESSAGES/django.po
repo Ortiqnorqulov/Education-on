@@ -1,0 +1,588 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-22 03:42+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: creatoradmin/templates/About/about_edit.html:105
+#: creatoradmin/templates/About/about_update.html:106
+#: creatoradmin/templates/About/add_about.html:105
+#: creatoradmin/templates/Adversiting/addadversiting.html:105
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:105
+#: creatoradmin/templates/Adversiting/adversiting_update.html:105
+#: creatoradmin/templates/Blog/news_add.html:105
+#: creatoradmin/templates/Blog/news_edit.html:105
+#: creatoradmin/templates/Blog/news_update.html:106
+#: creatoradmin/templates/Category/add_category.html:105
+#: creatoradmin/templates/Category/category_update.html:105
+#: creatoradmin/templates/Courses/add-cource.html:117
+#: creatoradmin/templates/Courses/course_update.html:116
+#: creatoradmin/templates/Information/information_add.html:105
+#: creatoradmin/templates/Information/information_update.html:106
+#: creatoradmin/templates/Slider/slider_add.html:105
+#: creatoradmin/templates/Slider/slider_edit.html:105
+#: creatoradmin/templates/Slider/slider_update.html:105
+#: creatoradmin/templates/Teacher/teacher-profile.html:105
+msgid "Title EN"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:111
+#: creatoradmin/templates/About/about_update.html:111
+#: creatoradmin/templates/About/add_about.html:111
+#: creatoradmin/templates/Adversiting/addadversiting.html:110
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:111
+#: creatoradmin/templates/Adversiting/adversiting_update.html:110
+#: creatoradmin/templates/Blog/news_add.html:110
+#: creatoradmin/templates/Blog/news_edit.html:111
+#: creatoradmin/templates/Blog/news_update.html:111
+#: creatoradmin/templates/Category/add_category.html:111
+#: creatoradmin/templates/Category/category_update.html:111
+#: creatoradmin/templates/Courses/add-cource.html:122
+#: creatoradmin/templates/Courses/course_update.html:121
+#: creatoradmin/templates/Information/information_add.html:110
+#: creatoradmin/templates/Information/information_update.html:111
+#: creatoradmin/templates/Slider/slider_add.html:110
+#: creatoradmin/templates/Slider/slider_edit.html:111
+#: creatoradmin/templates/Slider/slider_update.html:111
+#: creatoradmin/templates/Teacher/teacher-profile.html:110
+msgid "Title RU"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:117
+#: creatoradmin/templates/About/about_update.html:116
+#: creatoradmin/templates/About/add_about.html:117
+#: creatoradmin/templates/Adversiting/addadversiting.html:115
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:117
+#: creatoradmin/templates/Adversiting/adversiting_update.html:115
+#: creatoradmin/templates/Blog/news_add.html:115
+#: creatoradmin/templates/Blog/news_edit.html:117
+#: creatoradmin/templates/Blog/news_update.html:116
+#: creatoradmin/templates/Category/add_category.html:117
+#: creatoradmin/templates/Category/category_update.html:117
+#: creatoradmin/templates/Courses/add-cource.html:127
+#: creatoradmin/templates/Courses/course_update.html:126
+#: creatoradmin/templates/Information/information_add.html:115
+#: creatoradmin/templates/Information/information_update.html:116
+#: creatoradmin/templates/Slider/slider_add.html:115
+#: creatoradmin/templates/Slider/slider_edit.html:117
+#: creatoradmin/templates/Slider/slider_update.html:117
+#: creatoradmin/templates/Teacher/teacher-profile.html:115
+msgid "Title UZ"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:122
+#: creatoradmin/templates/About/add_about.html:124
+#: creatoradmin/templates/Adversiting/addadversiting.html:121
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:142
+#: creatoradmin/templates/Blog/news_add.html:121
+#: creatoradmin/templates/Blog/news_edit.html:124
+#: creatoradmin/templates/Category/add_category.html:124
+#: creatoradmin/templates/Courses/add-cource.html:143
+#: creatoradmin/templates/Courses/course_edit.html:143
+#: creatoradmin/templates/Slider/slider_add.html:121
+#: creatoradmin/templates/Slider/slider_edit.html:124
+#: creatoradmin/templates/Teacher/teacher-profile.html:120
+msgid "Image"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:129
+#: creatoradmin/templates/Blog/news_edit.html:133
+#: creatoradmin/templates/Slider/slider_edit.html:132
+msgid "Upload"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:135
+#: creatoradmin/templates/About/about_update.html:122
+#: creatoradmin/templates/About/add_about.html:133
+#: creatoradmin/templates/Adversiting/addadversiting.html:146
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:151
+#: creatoradmin/templates/Adversiting/adversiting_update.html:139
+#: creatoradmin/templates/Blog/news_add.html:129
+#: creatoradmin/templates/Blog/news_edit.html:141
+#: creatoradmin/templates/Blog/news_update.html:122
+#: creatoradmin/templates/Category/add_category.html:137
+#: creatoradmin/templates/Category/category_update.html:130
+#: creatoradmin/templates/Contact/contact_edit.html:137
+#: creatoradmin/templates/Contact/contact_get.html:138
+#: creatoradmin/templates/Courses/add-cource.html:155
+#: creatoradmin/templates/Courses/course_edit.html:157
+#: creatoradmin/templates/Courses/course_update.html:149
+#: creatoradmin/templates/Faq/faq_add.html:127
+#: creatoradmin/templates/Faq/faq_edit.html:131
+#: creatoradmin/templates/Faq/faq_update.html:132
+#: creatoradmin/templates/Information/information_update.html:195
+#: creatoradmin/templates/Slider/slider_add.html:129
+#: creatoradmin/templates/Slider/slider_edit.html:139
+#: creatoradmin/templates/Slider/slider_update.html:123
+#: creatoradmin/templates/Teacher/teacher-profile.html:128
+msgid "Status"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:141
+#: creatoradmin/templates/About/about_update.html:127
+#: creatoradmin/templates/About/add_about.html:141
+#: creatoradmin/templates/Adversiting/addadversiting.html:128
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:123
+#: creatoradmin/templates/Adversiting/adversiting_update.html:120
+#: creatoradmin/templates/Blog/news_add.html:137
+#: creatoradmin/templates/Blog/news_edit.html:149
+#: creatoradmin/templates/Blog/news_update.html:127
+#: creatoradmin/templates/Category/add_category.html:145
+#: creatoradmin/templates/Category/category_update.html:136
+#: creatoradmin/templates/Courses/add-cource.html:163
+#: creatoradmin/templates/Courses/course_update.html:154
+#: creatoradmin/templates/Information/information_add.html:188
+#: creatoradmin/templates/Information/information_update.html:180
+#: creatoradmin/templates/Slider/slider_add.html:137
+#: creatoradmin/templates/Slider/slider_edit.html:147
+#: creatoradmin/templates/Teacher/teacher-profile.html:136
+msgid "Description EN"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:147
+#: creatoradmin/templates/About/about_update.html:134
+#: creatoradmin/templates/About/add_about.html:147
+#: creatoradmin/templates/Adversiting/addadversiting.html:134
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:130
+#: creatoradmin/templates/Adversiting/adversiting_update.html:127
+#: creatoradmin/templates/Blog/news_add.html:143
+#: creatoradmin/templates/Blog/news_edit.html:155
+#: creatoradmin/templates/Blog/news_update.html:134
+#: creatoradmin/templates/Category/add_category.html:151
+#: creatoradmin/templates/Category/category_update.html:144
+#: creatoradmin/templates/Courses/add-cource.html:169
+#: creatoradmin/templates/Courses/course_update.html:160
+#: creatoradmin/templates/Information/information_add.html:194
+#: creatoradmin/templates/Information/information_update.html:185
+#: creatoradmin/templates/Slider/slider_add.html:143
+#: creatoradmin/templates/Slider/slider_edit.html:153
+#: creatoradmin/templates/Teacher/teacher-profile.html:142
+msgid "Description RU"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:153
+#: creatoradmin/templates/About/about_update.html:140
+#: creatoradmin/templates/About/add_about.html:153
+#: creatoradmin/templates/Adversiting/addadversiting.html:140
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:136
+#: creatoradmin/templates/Adversiting/adversiting_update.html:133
+#: creatoradmin/templates/Blog/news_add.html:149
+#: creatoradmin/templates/Blog/news_edit.html:161
+#: creatoradmin/templates/Blog/news_update.html:140
+#: creatoradmin/templates/Category/add_category.html:157
+#: creatoradmin/templates/Category/category_update.html:151
+#: creatoradmin/templates/Courses/add-cource.html:175
+#: creatoradmin/templates/Courses/course_update.html:166
+#: creatoradmin/templates/Courses/course_update.html:172
+#: creatoradmin/templates/Courses/course_update.html:178
+#: creatoradmin/templates/Courses/course_update.html:184
+#: creatoradmin/templates/Courses/course_update.html:190
+#: creatoradmin/templates/Courses/course_update.html:196
+#: creatoradmin/templates/Courses/course_update.html:202
+#: creatoradmin/templates/Courses/course_update.html:208
+#: creatoradmin/templates/Courses/course_update.html:214
+#: creatoradmin/templates/Information/information_add.html:200
+#: creatoradmin/templates/Information/information_update.html:190
+#: creatoradmin/templates/Slider/slider_add.html:149
+#: creatoradmin/templates/Slider/slider_edit.html:159
+#: creatoradmin/templates/Teacher/teacher-profile.html:148
+msgid "Description UZ"
+msgstr ""
+
+#: creatoradmin/templates/About/about_edit.html:157
+#: creatoradmin/templates/About/add_about.html:157
+#: creatoradmin/templates/Adversiting/addadversiting.html:151
+#: creatoradmin/templates/Adversiting/adversiting_edit.html:156
+#: creatoradmin/templates/Blog/news_add.html:153
+#: creatoradmin/templates/Blog/news_edit.html:165
+#: creatoradmin/templates/Category/add_category.html:161
+#: creatoradmin/templates/Courses/add-cource.html:220
+#: creatoradmin/templates/Courses/course_edit.html:181
+#: creatoradmin/templates/Faq/faq_add.html:151
+#: creatoradmin/templates/Faq/faq_edit.html:152
+#: creatoradmin/templates/Information/information_add.html:212
+#: creatoradmin/templates/Information/information_edit.html:226
+#: creatoradmin/templates/Slider/slider_add.html:153
+#: creatoradmin/templates/Slider/slider_edit.html:163
+#: creatoradmin/templates/Teacher/teacher-profile.html:173
+msgid "Submit"
+msgstr ""
+
+#: creatoradmin/templates/About/about_update.html:152
+#: creatoradmin/templates/Adversiting/adversiting_update.html:149
+#: creatoradmin/templates/Blog/news_update.html:146
+#: creatoradmin/templates/Category/category_update.html:158
+#: creatoradmin/templates/Contact/contact_get.html:155
+#: creatoradmin/templates/Courses/course_update.html:221
+#: creatoradmin/templates/Faq/faq_update.html:153
+#: creatoradmin/templates/Information/information_update.html:200
+#: creatoradmin/templates/Slider/slider_update.html:135
+msgid "Edit"
+msgstr ""
+
+#: creatoradmin/templates/About/about_update.html:155
+#: creatoradmin/templates/Adversiting/adversiting_update.html:152
+#: creatoradmin/templates/Blog/news_update.html:149
+#: creatoradmin/templates/Category/category_update.html:161
+#: creatoradmin/templates/Contact/contact_get.html:158
+#: creatoradmin/templates/Courses/course_update.html:224
+#: creatoradmin/templates/Faq/faq_update.html:156
+#: creatoradmin/templates/Information/information_update.html:205
+#: creatoradmin/templates/Newslatter/newsletter_get.html:127
+#: creatoradmin/templates/Slider/slider_update.html:138
+msgid "Delete"
+msgstr ""
+
+#: creatoradmin/templates/Category/add_category.html:131
+#: creatoradmin/templates/Category/category_update.html:123
+#: creatoradmin/templates/Courses/add-cource.html:150
+#: creatoradmin/templates/Courses/course_edit.html:151
+#: creatoradmin/templates/Courses/course_update.html:144
+msgid "Slug"
+msgstr ""
+
+#: creatoradmin/templates/Client/client.html:145
+msgid "Course"
+msgstr ""
+
+#: creatoradmin/templates/Client/client.html:148
+msgid "Price"
+msgstr ""
+
+#: creatoradmin/templates/Client/client.html:153
+msgid "Details"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:105
+#: creatoradmin/templates/Contact/contact_get.html:106
+msgid "Name"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:111
+#: creatoradmin/templates/Contact/contact_get.html:112
+msgid "Surname"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:118
+#: creatoradmin/templates/Contact/contact_get.html:119
+#: creatoradmin/templates/Information/information_add.html:157
+#: creatoradmin/templates/Information/information_edit.html:166
+#: creatoradmin/templates/Information/information_update.html:154
+#: creatoradmin/templates/Newslatter/newsletter_get.html:107
+msgid "Email"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:125
+#: creatoradmin/templates/Contact/contact_get.html:126
+msgid "Subject"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:131
+#: creatoradmin/templates/Contact/contact_get.html:132
+msgid "Message"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:144
+#: creatoradmin/templates/Newslatter/newsletter_get.html:114
+msgid "IP"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_edit.html:150
+#: creatoradmin/templates/Newslatter/newsletter_get.html:120
+msgid "Create_at"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_get.html:144
+msgid "ip"
+msgstr ""
+
+#: creatoradmin/templates/Contact/contact_get.html:150
+msgid "Create at"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:105
+#: creatoradmin/templates/Courses/course_edit.html:105
+#: creatoradmin/templates/Courses/course_update.html:106
+#: creatoradmin/templates/Courses/course_update.html:111
+msgid "Category"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:111
+msgid "Teacher"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:132
+#: creatoradmin/templates/Courses/course_edit.html:130
+#: creatoradmin/templates/Courses/course_update.html:131
+msgid "Old Price"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:137
+#: creatoradmin/templates/Courses/course_edit.html:136
+#: creatoradmin/templates/Courses/course_update.html:137
+msgid "Sell Price"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:181
+msgid "Language En"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:186
+msgid "Language Ru"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:191
+msgid "Language Uz"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:196
+msgid "Duration"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:201
+msgid "Level En"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:206
+msgid "Level Ru"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:211
+msgid "Level Uz"
+msgstr ""
+
+#: creatoradmin/templates/Courses/add-cource.html:216
+msgid "Youtube Link"
+msgstr ""
+
+#: creatoradmin/templates/Courses/course_edit.html:112
+#: creatoradmin/templates/Information/information_edit.html:105
+msgid "Title [EN]"
+msgstr ""
+
+#: creatoradmin/templates/Courses/course_edit.html:118
+#: creatoradmin/templates/Information/information_edit.html:111
+msgid "Title [RU]"
+msgstr ""
+
+#: creatoradmin/templates/Courses/course_edit.html:124
+#: creatoradmin/templates/Information/information_edit.html:117
+msgid "Title [UZ]"
+msgstr ""
+
+#: creatoradmin/templates/Courses/course_edit.html:165
+#: creatoradmin/templates/Information/information_edit.html:197
+msgid "Description [EN]"
+msgstr ""
+
+#: creatoradmin/templates/Courses/course_edit.html:171
+#: creatoradmin/templates/Information/information_edit.html:204
+msgid "Description [RU]"
+msgstr ""
+
+#: creatoradmin/templates/Courses/course_edit.html:177
+#: creatoradmin/templates/Information/information_edit.html:211
+msgid "Description [UZ]"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:105
+#: creatoradmin/templates/Faq/faq_edit.html:105
+#: creatoradmin/templates/Faq/faq_update.html:106
+msgid "Ordernumber"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:111
+#: creatoradmin/templates/Faq/faq_edit.html:112
+#: creatoradmin/templates/Faq/faq_update.html:113
+msgid "Question EN"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:116
+#: creatoradmin/templates/Faq/faq_edit.html:118
+#: creatoradmin/templates/Faq/faq_update.html:119
+msgid "Question RU"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:121
+#: creatoradmin/templates/Faq/faq_edit.html:124
+#: creatoradmin/templates/Faq/faq_update.html:125
+msgid "Question UZ"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:135
+#: creatoradmin/templates/Faq/faq_edit.html:139
+#: creatoradmin/templates/Faq/faq_update.html:137
+msgid "Answer EN"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:141
+#: creatoradmin/templates/Faq/faq_edit.html:144
+#: creatoradmin/templates/Faq/faq_update.html:143
+msgid "Answer RU"
+msgstr ""
+
+#: creatoradmin/templates/Faq/faq_add.html:147
+#: creatoradmin/templates/Faq/faq_edit.html:149
+#: creatoradmin/templates/Faq/faq_update.html:148
+msgid "Answer UZ"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:120
+#: creatoradmin/templates/Information/information_edit.html:123
+#: creatoradmin/templates/Information/information_update.html:121
+msgid "Country"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:125
+#: creatoradmin/templates/Information/information_edit.html:129
+#: creatoradmin/templates/Information/information_update.html:126
+msgid "City"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:131
+#: creatoradmin/templates/Information/information_update.html:131
+msgid "Address EN"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:136
+#: creatoradmin/templates/Information/information_update.html:137
+msgid "Address RU"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:141
+#: creatoradmin/templates/Information/information_update.html:143
+msgid "Address UZ"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:146
+#: creatoradmin/templates/Information/information_edit.html:154
+msgid "Location"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:151
+#: creatoradmin/templates/Information/information_edit.html:160
+#: creatoradmin/templates/Information/information_update.html:149
+msgid "Phone"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:163
+#: creatoradmin/templates/Information/information_edit.html:172
+#: creatoradmin/templates/Information/information_update.html:159
+#: creatoradmin/templates/Teacher/teacher-profile.html:154
+msgid "Telegram"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:169
+#: creatoradmin/templates/Information/information_edit.html:178
+#: creatoradmin/templates/Information/information_update.html:164
+#: creatoradmin/templates/Teacher/teacher-profile.html:159
+msgid "Instagram"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:175
+#: creatoradmin/templates/Information/information_edit.html:184
+#: creatoradmin/templates/Information/information_update.html:169
+#: creatoradmin/templates/Teacher/teacher-profile.html:169
+msgid "Facebook"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_add.html:181
+#: creatoradmin/templates/Information/information_edit.html:190
+#: creatoradmin/templates/Information/information_update.html:174
+#: creatoradmin/templates/Teacher/teacher-profile.html:164
+msgid "Twitter"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_edit.html:135
+msgid "Address [EN]"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_edit.html:141
+msgid "Address [RU]"
+msgstr ""
+
+#: creatoradmin/templates/Information/information_edit.html:147
+msgid "Address [UZ]"
+msgstr ""
+
+#: creatoradmin/templates/Reset_password/password_reset_complete.html:9
+msgid "Evara - home"
+msgstr ""
+
+#: creatoradmin/templates/Reset_password/password_reset_complete.html:87
+msgid "Password Reset Complete"
+msgstr ""
+
+#: creatoradmin/templates/Reset_password/password_reset_complete.html:88
+msgid "Your password has been reset. Please login now."
+msgstr ""
+
+#: creatoradmin/templates/Reset_password/password_reset_done.html:84
+msgid "Recovery Email Sent"
+msgstr ""
+
+#: creatoradmin/templates/Reset_password/password_reset_done.html:85
+msgid "A Recovery Email has been sent to your Email ID, if it exists."
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:35
+msgid "Dashboard"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:43
+msgid "Product"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:45
+msgid "Count"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:52
+msgid "PRODUCT"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:55
+msgid "TITLE"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:58
+msgid "OLD PRICE"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:61
+msgid "SELL PRICE"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:64
+msgid "CATEGORY"
+msgstr ""
+
+#: creatoradmin/templates/Searched/dashbourd_search.html:96
+#: creatoradmin/templates/Searched/searched.html:103
+msgid "Sorry, we couldn't find any results matching your search"
+msgstr ""
+
+#: creatoradmin/templates/Searched/searched.html:82
+#: creatoradmin/templates/Searched/searched.html:91
+msgid "Searched"
+msgstr ""
+
+#: creatoradmin/templates/Searched/searched.html:93
+msgid "Click on any image to open in product"
+msgstr ""

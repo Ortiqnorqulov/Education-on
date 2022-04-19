@@ -1,0 +1,147 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from educhamp.themetrades.com/demo/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Feb 2019 13:08:15 GMT -->
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="../error-404.html" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assestss/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : Education HTML Template </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="{% static 'assestss/js/html5shiv.min.js' %}"></script>
+	<script src="{% static 'assets/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assestss/css/assets.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assestss/vendors/calendar/fullcalendar.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assestss/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assestss/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assestss/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assestss/css/dashboard.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assestss/css/color/color-1.css' %}">
+
+</head>
+<body class="ttr-opened-sidebar ttr-pinned-sidebar">
+
+<!-- header start -->
+{% include 'Header/header.html' %}
+<!-- header end -->
+<!-- Left sidebar menu start -->
+<div class="ttr-sidebar">
+    <div class="ttr-sidebar-wrapper content-scroll">
+        <!-- side menu logo start -->
+        <div class="ttr-sidebar-logo" style="background-color: #3f189a">
+            <a href="#"><img alt="" src="{% static 'assets/images/logo-white-2.png' %}" width="122" height="27"></a>
+            <div class="ttr-sidebar-toggle-button">
+                <i class="ti-arrow-left" style="color: white"></i>
+            </div>
+        </div>
+        <!-- side menu logo end -->
+        <!-- sidebar menu start -->
+        {% include 'Navbar/navbar.html' %}
+        <!-- sidebar menu end -->
+    </div>
+</div>
+
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h3 class="page-title">
+                        {% trans 'Searched' %}
+                    </h3>
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+                <div class="row grid-margin">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">{% trans 'Searched' %}</h4>
+                                <p class="card-text">
+                                    {% trans "Click on any image to open in product" %}
+                                </p>
+                                {% if product %}
+                                    <div id="lightgallery" class="row lightGallery">
+                                        {% for rs in product %}
+                                            <a href="{% url 'product_gallery_id' rs.id %}" class="image-tile"><img
+                                                    src="{{ rs.image.url }}" alt="image small"></a>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {% trans "Sorry, we couldn't find any results matching your search" %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    {% include 'Paginator/paginator.html' with page=product %}
+                </div>
+            </footer>
+            <!-- partial -->
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'assestss/js/jquery.min.js' %}"></script>
+<script src="{% static 'assestss/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assestss/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assestss/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assestss/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assestss/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assestss/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assestss/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assestss/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assestss/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assestss/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assestss/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src='{% static 'assestss/vendors/scroll/scrollbar.min.js' %}'></script>
+<script src="{% static 'assestss/js/functions.js' %}"></script>
+<script src="{% static 'assestss/vendors/chart/chart.min.js' %}"></script>
+<script src="{% static 'assestss/js/admin.js' %}"></script>
+<script src='{% static 'assestss/vendors/calendar/moment.min.js' %}'></script>
+<script src='{% static 'assestss/vendors/calendar/fullcalendar.js' %}'></script>
+<script src='{% static 'assestss/vendors/switcher/switcher.js' %}'></script>
+
+</body>
+
+</html>

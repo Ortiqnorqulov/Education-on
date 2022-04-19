@@ -1,0 +1,284 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template"/>
+    <meta property="og:description" content="EduChamp : Education HTML Template"/>
+    <meta property="og:image" content=""/>
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}"/>
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : {% trans 'FAQs' %} </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'assets/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/revolution/css/navigation.css' %}">
+    <!-- REVOLUTION SLIDER END -->
+</head>
+<body id="bg">
+<div class="page-wraper">
+    <div id="loading-icon-bx"></div>
+    <!-- Header Top ==== -->
+    {% include 'header.html' %}
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark"
+             style="background-image:url({% static 'assets/images/banner/banner3.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <h1 class="text-white">{% trans 'Frequently Asked Questions' %}</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="#">{% trans 'Home' %}</a></li>
+                    <li>{% trans 'Faqs' %}</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+        <!-- contact area -->
+        <div class="content-block">
+            <!-- Your Faq -->
+            <!-- About Us -->
+            <div class="section-area section-sp1 bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                            <div class="feature-container">
+                                <div class="feature-md text-white m-b20">
+                                    <a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon1.png' %}" alt=""/></a>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="ttr-tilte">{% trans 'Our Philosophy' %}</h5>
+                                    <p>{% trans 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                            <div class="feature-container">
+                                <div class="feature-md text-white m-b20">
+                                    <a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon2.png' %}" alt=""/></a>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="ttr-tilte">{% trans "Kingster's Principle" %}</h5>
+                                    <p>{% trans 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                            <div class="feature-container">
+                                <div class="feature-md text-white m-b20">
+                                    <a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon3.png' %}" alt=""/></a>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="ttr-tilte">{% trans 'Key Of Success' %}</h5>
+                                    <p>{% trans 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                            <div class="feature-container">
+                                <div class="feature-md text-white m-b20">
+                                    <a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon4.png' %}" alt=""/></a>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="ttr-tilte">{% trans 'Our Philosophy' %}</h5>
+                                    <p>{% trans 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Our Services -->
+            <div class="section-area section-sp1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="heading-bx left">
+                                <h2 class="m-b10 title-head">{% trans 'Asked' %} <span> {% trans 'Questions' %}</span></h2>
+                            </div>
+                            <p class="m-b10">{% trans 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.' %}</p>
+                            <p>{% trans 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.' %}</p>
+                            <div class="ttr-accordion m-b30 faq-bx" id="accordion1">
+                                {% for rs in faq %}
+                                <div class="panel">
+                                    <div class="acod-head">
+                                        <h6 class="acod-title">
+                                            <a data-toggle="collapse" href="#faq{{ rs.number }}" class="collapsed"
+                                               data-parent="#faq{{ rs.number }}">
+                                                {{ rs.question }}</a></h6>
+                                    </div>
+                                    <div id="faq{{ rs.number }}" class="acod-body collapse">
+                                        <div class="acod-content">{{ rs.answer }}
+                                        </div>
+                                    </div>
+                                </div>
+								{% endfor %}
+                            </div>
+                            <p class="m-b10">{% trans 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.' %}</p>
+                            <p>{% trans 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.' %}</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            {% for rs in info %}
+                                <div class="bg-primary text-white contact-info-bx">
+                                    <h2 class="m-b10 title-head">{% trans 'Contact' %} <span>{% trans 'Information' %}</span></h2>
+                                    <p>{% trans 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' %}</p>
+                                    <div class="widget widget_getintuch">
+                                        <ul>
+                                            <li>
+                                                <i class="ti-location-pin"></i>{{ rs.location }} {{ rs.address }} {{ rs.city }} {{ rs.country }}
+                                            </li>
+                                            <li><i class="ti-mobile"></i>{{ rs.phone }} (24/7 {% trans 'Support Line' %})</li>
+                                            <li><i class="ti-email"></i>{{ rs.email }}</li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="m-t0 m-b20">{% trans 'Follow Us' %}</h5>
+                                    <ul class="list-inline contact-social-bx">
+                                        <li><a href="{{ rs.facebook }}" class="btn outline radius-xl"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                        <li><a href="{{ rs.twitter }}" class="btn outline radius-xl"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                        <li><a href="{{ rs.instagram }}" class="btn outline radius-xl"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                        <li><a href="{{ rs.telegram }}" class="btn outline radius-xl"><i
+                                                class="fa fa-telegram"></i></a></li>
+                                    </ul>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Your Faq End -->
+            <!-- Company Stats -->
+            <div class="section-area content-inner section-sp1 bg-gray">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+                                    <div class="text-primary">
+                                        <span class="counter">3000</span><span>+</span>
+                                    </div>
+                                    <span class="counter-text">{% trans 'Completed Projects' %}</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+                                    <div class="text-black">
+                                        <span class="counter">2500</span><span>+</span>
+                                    </div>
+                                    <span class="counter-text">{% trans 'Happy Clients' %}</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+                                    <div class="text-primary">
+                                        <span class="counter">1500</span><span>+</span>
+                                    </div>
+                                    <span class="counter-text">{% trans 'Questions Answered' %}</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+                                    <div class="text-black">
+                                        <span class="counter">1000</span><span>+</span>
+                                    </div>
+                                    <span class="counter-text">{% trans "Ordered Coffee's" %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Company Stats END -->
+        </div>
+        <!-- contact area END -->
+    </div>
+    <!-- Content END-->
+    <!-- Footer ==== -->
+   {% include 'footer.html' %}
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src='{% static 'assets/vendors/switcher/switcher.js' %}'></script>
+<!-- Revolution JavaScripts Files -->
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'assets/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+</body>
+
+</html>
